@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+
+        MenuItem m1 = new MenuItem("C-01", "Espresso", 9.0, "coffee");
+        MenuItem m2 = new MenuItem("C-02", "Cappuccino", 13.5, "coffee");
+
+        System.out.println(m1);
+        System.out.println(m2);
+
+        System.out.println("Product count: " + MenuItem.getProductCount());
+
+        MenuItem m3 = new MenuItem("C-01", "Duplicate Espresso", 9.0, "coffee");
+
+        System.out.println("Are equal: " + m1.equals(m3));
+    }
+}
