@@ -12,5 +12,11 @@ public class Main {
         MenuItem m3 = new MenuItem("C-01", "Duplicate Espresso", 9.0, "coffee");
 
         System.out.println("Are equal: " + m1.equals(m3));
+        CafeCustomer c1 = new CafeCustomer(1, "Ali", "Yilmaz", "ali@mail.com");
+        CafeCustomer c2 = new CafeCustomer(1, "Ali", "Yilmaz", "ali@mail.com");
+
+        System.out.println(c1);
+        System.out.println("Customers equal: " + c1.equals(c2));
     }
 }
+
