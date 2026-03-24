@@ -17,6 +17,19 @@ public class Main {
 
         System.out.println(c1);
         System.out.println("Customers equal: " + c1.equals(c2));
+        Order order = new Order(c1);
+
+        order.addItem(m1);
+        order.addItem(m2);
+
+        System.out.println(order);
+
+        System.out.println("Total value: " + order.calculateTotal());
+        System.out.println("Number of items: " + order.countItems());
+
+        order.markAsPaid();
+
+        System.out.println(order);
     }
 }
 
